@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Pempek Wong Kito Palembang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>KEDAI PEMPEK WONG KITO PALEMBANG</h1>
+    </div>
+
+    <div class="menu">
+        <a onclick="showSection('Menu')">Menu</a>
+        <a onclick="showSection('Beli')">Beli</a>
+        <a onclick="showSection('Transaksi')">Transaksi</a>
+        <a onclick="showSection('Kontak Profile')">Kontak Profile</a>
+    </div>
+
+    <div class="row">
+        <div class="left">
+            <h2></h2>
+        </div>
+
+        <div class="center">
+            <section id="Menu" class="content">
+                <div class="Menu-header">
+                    <h2>SPESIAL PEMPEK WONG KITO GALO</h2>
+                    <p>Macam-macam menu pilihan</p>
+                </div>
+                <div class="image-gallery">
+                    <div class="image-card">
+                        <img src="Pempek Kapal Selam.jpeg" alt="PEMPEK KAPAL SELAM">
+                        <p>Pempek Kapal Selam - <span class="price">Rp 25.000</span></p>
+                    </div>
+                    <div class="image-card">
+                        <img src="Pempek Kulit.jpeg" alt="PEMPEK KULIT">
+                        <p>Pempek Kulit - <span class="price">Rp 15.000</span></p>
+                    </div>
+                    <div class="image-card">
+                        <img src="Pempek Lenjer.jpeg" alt="PEMPEK LENJER">
+                        <p>Pempek Lenjer - <span class="price">Rp 10.000</span></p>
+                    </div>
+                    <div class="image-card">
+                        <img src="Pempek Adaan.jpeg" alt="PEMPEK ADAAN">
+                        <p>Pempek Adaan - <span class="price">Rp 10.000</span></p>
+                    </div>
+                    <div class="image-card">
+                        <img src="Pempek Telur.jpeg" alt="PEMPEK TELUR">
+                        <p>Pempek Telur - <span class="price">Rp 13.000</span></p>
+                    </div>
+                    <div class="image-card">
+                        <img src="Pempek Tahu.jpeg" alt="PEMPEK TAHU">
+                        <p>Pempek Tahu - <span class="price">Rp .000</span></p>
+                    </div>
+                </div>
+                <div class="marquee">
+                    <p>TERIMAKASIH SELAMAT DATANG KEMBALI</p>
+                </div>
+            </section>
+
+            <section id="Beli" class="content hidden">
+                <h2>Input Pembelian</h2>
+                <form id="transaksiForm">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" class="input-long" required><br><br>
+                    <label for="alamat">Alamat:</label><br>
+                    <input type="text" id="alamat" name="alamat" class="input-long" required><br><br>
+                    <label for="No.Handphone">No.Handphone</label>
+                    <input type="text" id="No.Handphone" name="No.Handphone" class="input-long" required><br><br>
+                    <label for="tipe">Jenis Pempek:</label><br>
+                    <select id="tipeSelect" name="tipe" class="input-long" required>
+                        <option value="Pempek Kapal Selam - Rp 20.000">Pempek Kapal Selamy- Rp 20.000</option>
+                        <option value="Pempek Kulit - Rp 15.000">Pempek Kulit - Rp 15.000</option>
+                        <option value="Pempek Lenjer - Rp 25.000">Pempek Lenjer - Rp 25.000</option>
+                        <option value="Pempek Adaan - Rp 10.000">Pempek Adaan - Rp 10.000</option>
+                    </select><br><br>
+                    <label for="jumlah">Jumlah:</label><br>
+                    <input type="number" id="jumlah" name="jumlah" class="input-long" required><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+
+            <section id="Transaksi" class="content hidden">
+                <h2>Transaksi Pembelian</h2>
+                <div id="transaksiList"></div>
+            </section>
+
+            <section id="Kontak Profile" class="content hidden">
+                <h2>Kontak Profile</h2>
+                <div class="kontak-content">
+                    <img src="BAGUSTIAN.jpeg" alt="Foto Profil" width="500px" height="500px">
+                    <div class="kontak-info">
+                        <p><strong>CONTACT:</strong> 0821-1327-1844</p>
+                        <p><strong>EMAIL:</strong> pempekwongkito@gmail.com</p>
+                        <p><strong>Nama:</strong> BAGUSTIAN FADILLAH</p>
+                        <p><strong>Kelas:</strong> IS-3</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="right">
+            <h2>Pempek Wong Kito</h2>
+            <p>Pempek adalah makanan khas Palembang, Sumatera Selatan. Proses pembuatanya yakni dibuat dari daging ikan yang digiling lembut, dicampur tepung kanji atau tepung sagu, serta dengan penambahan komposisi bahan lain
+               seperti telur, bawang putih yang dihaluskan, penyedap rasa, dan garam. Pempek biasanya disajikan dengan kuah yang disebut cuko yang memiliki rasa asam, manis, dan pedas.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
